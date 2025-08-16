@@ -78,7 +78,7 @@ export default function Portfolio() {
     {
       institution: "University of Management and Technology (UMT)",
       degree: "Bachelor of Science (BS) in Computer Science",
-      period: "Oct 2024 – Sep 2028",
+      period: "Oct 2024 ��� Sep 2028",
       grade: "CGPA: 3.70"
     },
     {
@@ -259,7 +259,7 @@ export default function Portfolio() {
               &lt;/DEV&gt;
             </div>
             <div className="hidden md:flex space-x-8">
-              {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
+              {['Home', 'About', 'Projects', 'Skills', 'Certifications', 'Contact'].map((item) => (
                 <button
                   key={item}
                   className="text-gray-300 hover:text-cyan-400 transition-all duration-300 relative group hover:scale-105"
@@ -278,12 +278,12 @@ export default function Portfolio() {
       <section id="home" className={`min-h-screen flex items-center justify-center relative pt-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center space-y-8 z-10">
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-8xl font-black tracking-wider animate-float">
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+            <h1 className="text-6xl md:text-8xl font-black tracking-wider">
+              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 USMAN
               </span>
               <br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent glow-text animate-text-glow">FARHAN</span>
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">FARHAN</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-400 font-mono tracking-wide">
               &gt; Computer Scientist | Data Analytics | AI Enthusiast_
