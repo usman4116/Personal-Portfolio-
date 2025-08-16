@@ -291,14 +291,16 @@ export default function Portfolio() {
           </div>
           
           <div className="flex justify-center space-x-6 mt-12">
-            <Button 
-              className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-black font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-cyan-400 transition-all duration-300 glow-button"
+            <Button
+              className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-black font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-cyan-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
+              onClick={() => scrollToSection('projects')}
             >
               VIEW PROJECTS <Zap className="ml-2 w-4 h-4" />
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300"
+            <Button
+              variant="outline"
+              className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300 hover:scale-105"
+              onClick={() => scrollToSection('contact')}
             >
               CONTACT <ExternalLink className="ml-2 w-4 h-4" />
             </Button>
