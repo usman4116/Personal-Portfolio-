@@ -290,7 +290,7 @@ export default function Portfolio() {
               <span className="text-white" style={{textShadow: '0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1)'}}>FARHAN</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-400 font-mono tracking-wide">
-              &gt; Computer Scientist | Data Analytics | AI Enthusiast_
+              &gt; Computer Scientist | Data Science | AI Enthusiast_
             </div>
           </div>
           
