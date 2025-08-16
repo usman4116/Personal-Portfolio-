@@ -253,7 +253,7 @@ export default function Portfolio() {
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-purple-500/20">
-        <div className="max-w-7xl mx-auto px-6 py-4 bg-[#00000000] mt-[0px] mr-[0px] mb-[0px] ml-[0px] pt-[16px] pr-[24px] pb-[16px] pl-[24px] text-[16px] font-normal font-mono opacity-100 text-[#FFFFFF]">
+        <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               &lt;/DEV&gt;
@@ -262,8 +262,8 @@ export default function Portfolio() {
               {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
                 <button
                   key={item}
-                  className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 relative group"
-                  onClick={() => setActiveSection(item.toLowerCase())}
+                  className="text-gray-300 hover:text-cyan-400 transition-all duration-300 relative group hover:scale-105"
+                  onClick={() => scrollToSection(item.toLowerCase())}
                 >
                   {item}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
