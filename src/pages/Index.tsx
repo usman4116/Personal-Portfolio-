@@ -548,9 +548,10 @@ export default function Portfolio() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <Card 
+              <Card
                 key={index}
-                className="bg-gray-900/30 border-2 border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group glow-card-hover backdrop-blur-sm"
+                className="bg-gray-900/30 border-2 border-gray-700 hover:border-yellow-400/50 transition-all duration-500 group glow-card-hover backdrop-blur-sm cyber-card hover:scale-105 animate-float"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-4 space-y-3">
                   <div className="flex justify-between items-start">
@@ -609,7 +610,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-6 relative">
+      <section id="contact" className="py-20 px-6 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-black mb-12">
             <span className="bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent">
@@ -623,15 +624,17 @@ export default function Portfolio() {
             </p>
             
             <div className="flex justify-center gap-6">
-              <Button 
-                className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-pink-400 transition-all duration-300 glow-button"
+              <Button
+                className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-pink-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
+                onClick={handleEmailClick}
               >
                 <Mail className="mr-2 w-4 h-4" />
                 EMAIL ME
               </Button>
-              <Button 
-                variant="outline" 
-                className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300"
+              <Button
+                variant="outline"
+                className="border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300 hover:scale-105"
+                onClick={handleGithubClick}
               >
                 <Github className="mr-2 w-4 h-4" />
                 GITHUB
