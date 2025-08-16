@@ -27,29 +27,29 @@ export default function Portfolio() {
       title: "UMT Student Portal",
       description: "Modern redesign of UMT's student portal using HTML, Tailwind CSS, and JavaScript. Includes dark/light mode, responsive sidebar, dynamic sections.",
       tech: ["HTML", "Tailwind CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/usmanfarhan/umt-portal",
+      live: "https://umt-portal.netlify.app"
     },
     {
       title: "PandasAnalytica CLI",
       description: "A Python-based CLI tool for Exploratory Data Analysis (EDA) supporting CSV, Excel, and JSON formats.",
       tech: ["Python", "Pandas", "CLI"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/usmanfarhan/pandas-analytica",
+      live: "https://pypi.org/project/pandas-analytica/"
     },
     {
       title: "Personal Finance Manager",
       description: "Semester project in C++ with OOP & File Handling for personal finance tracking and expense management.",
       tech: ["C++", "OOP", "File Handling"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/usmanfarhan/finance-manager",
+      live: "https://github.com/usmanfarhan/finance-manager/releases"
     },
     {
       title: "Car Rental System",
       description: "Collaborative project in C++ demonstrating OOP, team leadership, and efficient booking system design.",
       tech: ["C++", "OOP", "System Design"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/usmanfarhan/car-rental-system",
+      live: "https://github.com/usmanfarhan/car-rental-system/releases"
     }
   ];
 
