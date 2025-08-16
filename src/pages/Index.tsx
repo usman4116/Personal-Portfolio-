@@ -324,25 +324,25 @@ export default function Portfolio() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="text-lg text-gray-300 leading-relaxed font-mono">
-                <p className="mb-4">
-                  I am a <span className="text-cyan-400 font-bold">Computer Scientist</span> with a strong foundation in 
-                  <span className="text-purple-400 font-bold"> Python</span>, 
-                  <span className="text-green-400 font-bold"> Data Analytics</span>, and 
-                  <span className="text-pink-400 font-bold"> AI</span>.
+              <div className="text-lg text-white leading-relaxed font-mono">
+                <p className="mb-4 font-medium drop-shadow-lg">
+                  I am a <span className="text-cyan-300 font-bold bg-black/30 px-1 rounded">Computer Scientist</span> with a strong foundation in
+                  <span className="text-purple-300 font-bold bg-black/30 px-1 rounded"> Python</span>,
+                  <span className="text-green-300 font-bold bg-black/30 px-1 rounded"> Data Analytics</span>, and
+                  <span className="text-pink-300 font-bold bg-black/30 px-1 rounded"> AI</span>.
                 </p>
-                <p>
-                  Skilled in problem-solving, programming, and creating innovative solutions. 
-                  My journey includes certifications, practical projects, and hands-on experience 
+                <p className="font-medium drop-shadow-lg">
+                  Skilled in problem-solving, programming, and creating innovative solutions.
+                  My journey includes certifications, practical projects, and hands-on experience
                   in modern tools for data-driven development.
                 </p>
               </div>
               
               <div className="flex flex-wrap gap-3">
                 {['Python', 'C++', 'Data Science', 'Machine Learning', 'Web Dev'].map((tag) => (
-                  <Badge 
+                  <Badge
                     key={tag}
-                    className="bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-400/50 text-cyan-400 px-4 py-2 font-mono"
+                    className="bg-cyan-600/80 border border-cyan-400 text-white px-4 py-2 font-mono font-semibold drop-shadow-lg"
                   >
                     #{tag}
                   </Badge>
@@ -391,7 +391,7 @@ export default function Portfolio() {
               >
                 <CardContent className="p-6 space-y-4">
                   <div className="flex justify-between items-start">
-                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors drop-shadow-lg">
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
@@ -414,7 +414,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-300 text-sm leading-relaxed font-medium drop-shadow">
+                  <p className="text-white text-sm leading-relaxed font-medium drop-shadow-lg bg-black/20 p-2 rounded">
                     {project.description}
                   </p>
                   
