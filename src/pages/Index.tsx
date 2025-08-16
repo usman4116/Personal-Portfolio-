@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { ExternalLink, Github, Mail, MapPin, Calendar, GraduationCap, Briefcase, Code, Database, Brain, Zap, Linkedin } from 'lucide-react';
+import { ExternalLink, Github, Mail, MapPin, Calendar, GraduationCap, Briefcase, Code, Database, Brain, Zap, Linkedin, Phone } from 'lucide-react';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -626,7 +626,28 @@ export default function Portfolio() {
             <p className="text-xl text-gray-300 font-mono">
               Ready to build something <span className="text-cyan-400 font-bold">AMAZING</span> together?
             </p>
-            
+
+            {/* Contact Information */}
+            <Card className="bg-gray-900/50 border-2 border-cyan-500/30 backdrop-blur-sm glow-card mx-auto max-w-md">
+              <CardContent className="p-6 space-y-4">
+                <h3 className="text-xl font-bold text-cyan-400 mb-4 font-mono text-center">CONTACT INFO</h3>
+                <div className="space-y-3 font-mono text-sm">
+                  <div className="flex items-center gap-3 justify-center">
+                    <Mail className="w-4 h-4 text-pink-400" />
+                    <span className="text-white font-medium drop-shadow">roxenusman@gmail.com</span>
+                  </div>
+                  <div className="flex items-center gap-3 justify-center">
+                    <Phone className="w-4 h-4 text-green-400" />
+                    <span className="text-white font-medium drop-shadow">+92 333 4511227</span>
+                  </div>
+                  <div className="flex items-center gap-3 justify-center">
+                    <MapPin className="w-4 h-4 text-purple-400" />
+                    <span className="text-white font-medium drop-shadow">Lahore, Punjab, Pakistan</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <div className="flex justify-center gap-4 flex-wrap">
               <Button
                 className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-pink-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
