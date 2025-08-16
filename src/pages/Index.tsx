@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
-import { ExternalLink, Github, Mail, MapPin, Calendar, GraduationCap, Briefcase, Code, Database, Brain, Zap } from 'lucide-react';
+import { ExternalLink, Github, Mail, MapPin, Calendar, GraduationCap, Briefcase, Code, Database, Brain, Zap, Linkedin } from 'lucide-react';
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -232,6 +232,10 @@ export default function Portfolio() {
 
   const handleGithubClick = () => {
     window.open('https://github.com/usmanfarhan', '_blank');
+  };
+
+  const handleLinkedinClick = () => {
+    window.open('https://www.linkedin.com/in/usmanfarhan/', '_blank');
   };
 
   const handleProjectAction = (url: string) => {
@@ -623,13 +627,21 @@ export default function Portfolio() {
               Ready to build something <span className="text-cyan-400 font-bold">AMAZING</span> together?
             </p>
             
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-4 flex-wrap">
               <Button
                 className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-pink-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
                 onClick={handleEmailClick}
               >
                 <Mail className="mr-2 w-4 h-4" />
                 EMAIL ME
+              </Button>
+              <Button
+                variant="outline"
+                className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300 hover:scale-105"
+                onClick={handleLinkedinClick}
+              >
+                <Linkedin className="mr-2 w-4 h-4" />
+                LINKEDIN
               </Button>
               <Button
                 variant="outline"
