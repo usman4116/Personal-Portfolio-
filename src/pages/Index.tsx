@@ -280,34 +280,53 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section id="home" className={`min-h-screen flex items-center justify-center relative pt-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-        <div className="text-center space-y-8 z-10">
-          <div className="space-y-4">
-            <h1 className="text-6xl md:text-8xl font-black tracking-wider animate-float">
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-                USMAN
-              </span>
-              <br />
-              <span className="text-white" style={{textShadow: '0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1)'}}>FARHAN</span>
-            </h1>
-            <div className="text-xl md:text-2xl text-gray-400 font-mono tracking-wide">
-              &gt; Computer Scientist | Data Science | AI Enthusiast_
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 z-10 max-w-7xl mx-auto px-6">
+          {/* Profile Image */}
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full opacity-75 blur-xl animate-pulse"></div>
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-cyan-400/50 shadow-2xl transform group-hover:scale-105 transition-all duration-300">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F596e18a5973e47f8bfbc68161b2fb195%2Fe81db23535d3474d80e1a740521277db?format=webp&width=800"
+                alt="Usman Farhan Profile"
+                className="w-full h-full object-cover filter brightness-110 contrast-110"
+                style={{
+                  boxShadow: 'inset 0 0 50px rgba(6, 182, 212, 0.2)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-transparent to-purple-500/10"></div>
             </div>
           </div>
-          
-          <div className="flex justify-center space-x-6 mt-12">
-            <Button
-              className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-black font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-cyan-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
-              onClick={() => scrollToSection('projects')}
-            >
-              VIEW PROJECTS <Zap className="ml-2 w-4 h-4" />
-            </Button>
-            <Button
-              variant="outline"
-              className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300 hover:scale-105"
-              onClick={() => scrollToSection('contact')}
-            >
-              CONTACT <ExternalLink className="ml-2 w-4 h-4" />
-            </Button>
+
+          {/* Text Content */}
+          <div className="text-center lg:text-left space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-8xl font-black tracking-wider animate-float">
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+                  USMAN
+                </span>
+                <br />
+                <span className="text-white" style={{textShadow: '0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1)'}}>FARHAN</span>
+              </h1>
+              <div className="text-lg md:text-xl lg:text-2xl text-gray-400 font-mono tracking-wide">
+                &gt; Computer Scientist | Data Science | AI Enthusiast_
+              </div>
+            </div>
+
+            <div className="flex justify-center lg:justify-start gap-4 flex-wrap mt-12">
+              <Button
+                className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-black font-bold px-8 py-3 rounded-none border-2 border-transparent hover:border-cyan-400 transition-all duration-300 glow-button cyber-button hover:scale-105"
+                onClick={() => scrollToSection('projects')}
+              >
+                VIEW PROJECTS <Zap className="ml-2 w-4 h-4" />
+              </Button>
+              <Button
+                variant="outline"
+                className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-none transition-all duration-300 hover:scale-105"
+                onClick={() => scrollToSection('contact')}
+              >
+                CONTACT <ExternalLink className="ml-2 w-4 h-4" />
+              </Button>
+            </div>
           </div>
         </div>
 
