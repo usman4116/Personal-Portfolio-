@@ -491,9 +491,9 @@ export default function Portfolio() {
               <h3 className="text-2xl font-bold text-cyan-400 mb-6 font-mono">EDUCATION</h3>
               <div className="space-y-6">
                 {education.map((edu, index) => (
-                  <Card 
+                  <Card
                     key={index}
-                    className="bg-gray-900/30 border-l-4 border-cyan-400 border-t border-r border-b border-gray-700 backdrop-blur-sm"
+                    className="bg-gray-900/30 border-l-4 border-cyan-400 border-t border-r border-b border-gray-700 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover-glow"
                   >
                     <CardContent className="p-4">
                       <h4 className="font-bold text-white">{edu.institution}</h4>
@@ -511,7 +511,7 @@ export default function Portfolio() {
             {/* Experience */}
             <div>
               <h3 className="text-2xl font-bold text-purple-400 mb-6 font-mono">EXPERIENCE</h3>
-              <Card className="bg-gray-900/30 border-l-4 border-purple-400 border-t border-r border-b border-gray-700 backdrop-blur-sm">
+              <Card className="bg-gray-900/30 border-l-4 border-purple-400 border-t border-r border-b border-gray-700 backdrop-blur-sm hover:scale-105 transition-all duration-300 hover-glow">
                 <CardContent className="p-4">
                   <h4 className="font-bold text-white">Advanced Software Engineering Job Simulation</h4>
                   <p className="text-purple-400 text-sm">Forage (Remote)</p>
