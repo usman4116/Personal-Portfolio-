@@ -436,7 +436,7 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-6 relative">
+      <section id="skills" className="py-20 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black mb-12 text-center">
             <span className="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent">
@@ -446,9 +446,10 @@ export default function Portfolio() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {skills.map((category, categoryIndex) => (
-              <Card 
+              <Card
                 key={categoryIndex}
-                className="bg-gray-900/40 border-2 border-gray-700 hover:border-green-400/50 transition-all duration-300 backdrop-blur-sm"
+                className="bg-gray-900/40 border-2 border-gray-700 hover:border-green-400/50 transition-all duration-500 backdrop-blur-sm cyber-card animate-glow hover:scale-105"
+                style={{ animationDelay: `${categoryIndex * 0.3}s` }}
               >
                 <CardContent className="p-6">
                   <h3 className="text-lg font-bold text-green-400 mb-6 font-mono">
