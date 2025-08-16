@@ -70,7 +70,7 @@ export default function Portfolio() {
       { name: "Data Visualization", level: 80 },
       { name: "Machine Learning", level: 75 },
       { name: "Web Development", level: 70 },
-      { name: "Business Intelligence", level: 65 }
+      { name: "Software Engineering", level: 80 }
     ]}
   ];
 
@@ -351,7 +351,7 @@ export default function Portfolio() {
                 <p className="mb-4 font-medium drop-shadow-lg">
                   I am a <span className="text-cyan-300 font-bold bg-black/30 px-1 rounded">Computer Scientist</span> with a strong foundation in
                   <span className="text-purple-300 font-bold bg-black/30 px-1 rounded"> Python</span>,
-                  <span className="text-green-300 font-bold bg-black/30 px-1 rounded"> Data Analytics</span>, and
+                  <span className="text-green-300 font-bold bg-black/30 px-1 rounded"> Data Science</span>, and
                   <span className="text-pink-300 font-bold bg-black/30 px-1 rounded"> AI</span>.
                 </p>
                 <p className="font-medium drop-shadow-lg">
