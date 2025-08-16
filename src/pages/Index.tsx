@@ -283,7 +283,7 @@ export default function Portfolio() {
                 USMAN
               </span>
               <br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent glow-text animate-text-glow">FARHAN</span>
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">FARHAN</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-400 font-mono tracking-wide">
               &gt; Computer Scientist | Data Analytics | AI Enthusiast_
@@ -538,7 +538,7 @@ export default function Portfolio() {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-20 px-6 relative">
+      <section id="certifications" className="py-20 px-6 relative">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black mb-12 text-center">
             <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
