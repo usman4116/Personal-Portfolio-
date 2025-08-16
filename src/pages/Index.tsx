@@ -275,15 +275,15 @@ export default function Portfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative bg-[#00000000] mt-[0px] mr-[0px] mb-[0px] ml-[0px] pt-[80px] pr-[0px] pb-[0px] pl-[0px] text-[16px] font-normal font-mono opacity-100 text-[#FFFFFF]">
+      <section id="home" className={`min-h-screen flex items-center justify-center relative pt-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center space-y-8 z-10">
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-8xl font-black tracking-wider">
-              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text animate-pulse bg-[#00000000] mt-[0px] mr-[0px] mb-[0px] ml-[0px] pt-[0px] pr-[0px] pb-[0px] pl-[0px] text-[96px] font-black text-center font-mono opacity-82 text-[#00000000]">
+            <h1 className="text-6xl md:text-8xl font-black tracking-wider animate-float">
+              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
                 USMAN
               </span>
               <br />
-              <span className="glow-text glow-text bg-[#00000000] mt-[0px] mr-[0px] mb-[0px] ml-[0px] pt-[0px] pr-[0px] pb-[0px] pl-[0px] text-[96px] font-black text-center font-mono opacity-100 text-[#FFFFFF]">FARHAN</span>
+              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent glow-text animate-text-glow">FARHAN</span>
             </h1>
             <div className="text-xl md:text-2xl text-gray-400 font-mono tracking-wide">
               &gt; Computer Scientist | Data Analytics | AI Enthusiast_
