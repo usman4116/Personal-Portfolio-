@@ -227,7 +227,7 @@ export default function Portfolio() {
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:usmanfarhan@example.com';
+    window.location.href = 'mailto:roxenusman@gmail.com';
   };
 
   const handleGithubClick = () => {
@@ -356,15 +356,15 @@ export default function Portfolio() {
                 <div className="space-y-3 font-mono text-sm">
                   <div className="flex items-center gap-3">
                     <GraduationCap className="w-4 h-4 text-green-400" />
-                    <span>Studying at UMT - CGPA: 3.70</span>
+                    <span className="text-white font-medium drop-shadow">Studying at UMT - CGPA: 3.70</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-4 h-4 text-purple-400" />
-                    <span>Based in Pakistan</span>
+                    <span className="text-white font-medium drop-shadow">Based in Pakistan</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Briefcase className="w-4 h-4 text-cyan-400" />
-                    <span>Open for opportunities</span>
+                    <span className="text-white font-medium drop-shadow">Open for opportunities</span>
                   </div>
                 </div>
               </CardContent>
@@ -414,7 +414,7 @@ export default function Portfolio() {
                     </div>
                   </div>
                   
-                  <p className="text-gray-400 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm leading-relaxed font-medium drop-shadow">
                     {project.description}
                   </p>
                   
@@ -555,13 +555,13 @@ export default function Portfolio() {
               >
                 <CardContent className="p-4 space-y-3">
                   <div className="flex justify-between items-start">
-                    <Badge 
-                      className={`text-xs ${
-                        cert.type === 'Specialization' 
-                          ? 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-400/50 text-purple-400'
+                    <Badge
+                      className={`text-xs font-semibold ${
+                        cert.type === 'Specialization'
+                          ? 'bg-purple-600/80 text-white border border-purple-400'
                           : cert.type === 'Professional Certification'
-                          ? 'bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-400/50 text-yellow-400'
-                          : 'bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-400/50 text-green-400'
+                          ? 'bg-yellow-600/80 text-black border border-yellow-400'
+                          : 'bg-green-600/80 text-white border border-green-400'
                       }`}
                     >
                       {cert.type}
@@ -578,15 +578,15 @@ export default function Portfolio() {
                     )}
                   </div>
                   
-                  <h3 className="font-bold text-white text-sm leading-tight group-hover:text-yellow-400 transition-colors">
+                  <h3 className="font-bold text-white text-sm leading-tight group-hover:text-yellow-400 transition-colors drop-shadow-lg">
                     {cert.title}
                   </h3>
                   
                   <div className="space-y-1">
-                    <p className="text-yellow-400 text-xs font-mono">{cert.provider}</p>
-                    <p className="text-gray-400 text-xs font-mono">{cert.date}</p>
+                    <p className="text-yellow-300 text-xs font-mono font-semibold drop-shadow">{cert.provider}</p>
+                    <p className="text-gray-300 text-xs font-mono font-medium">{cert.date}</p>
                     {cert.credentialId && (
-                      <p className="text-cyan-400 text-xs font-mono">ID: {cert.credentialId}</p>
+                      <p className="text-cyan-300 text-xs font-mono font-medium">ID: {cert.credentialId}</p>
                     )}
                   </div>
                 </CardContent>
