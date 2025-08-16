@@ -314,7 +314,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 px-6 relative">
+      <section id="about" className="py-20 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black mb-12 text-center">
             <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
@@ -350,7 +350,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <Card className="bg-gray-900/50 border-2 border-purple-500/30 backdrop-blur-sm glow-card">
+            <Card className="bg-gray-900/50 border-2 border-purple-500/30 backdrop-blur-sm glow-card animate-pulse-glow hover:scale-105 transition-all duration-300">
               <CardContent className="p-6 space-y-4">
                 <h3 className="text-xl font-bold text-cyan-400 mb-4">CURRENT STATUS</h3>
                 <div className="space-y-3 font-mono text-sm">
@@ -374,7 +374,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-6 relative">
+      <section id="projects" className="py-20 px-6 relative">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-black mb-12 text-center">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -384,9 +384,10 @@ export default function Portfolio() {
           
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card 
+              <Card
                 key={index}
-                className="bg-gray-900/30 border-2 border-gray-700 hover:border-cyan-400/50 transition-all duration-300 group glow-card-hover backdrop-blur-sm"
+                className="bg-gray-900/30 border-2 border-gray-700 hover:border-cyan-400/50 transition-all duration-500 group glow-card-hover backdrop-blur-sm animate-float hover:scale-105 cyber-card"
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-6 space-y-4">
                   <div className="flex justify-between items-start">
