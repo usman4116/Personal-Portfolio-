@@ -420,9 +420,9 @@ export default function Portfolio() {
                   
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
-                      <Badge 
+                      <Badge
                         key={tech}
-                        className="bg-gradient-to-r from-green-500/20 to-cyan-500/20 border border-green-400/50 text-green-400 text-xs"
+                        className="bg-gradient-to-r from-green-600/80 to-cyan-600/80 border border-green-400 text-white text-xs font-semibold drop-shadow-lg"
                       >
                         {tech}
                       </Badge>
