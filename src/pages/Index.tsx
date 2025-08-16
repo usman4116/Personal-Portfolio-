@@ -395,17 +395,19 @@ export default function Portfolio() {
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
-                      <Button 
-                        size="sm" 
+                      <Button
+                        size="sm"
                         variant="ghost"
-                        className="p-2 hover:bg-cyan-400/20 hover:text-cyan-400"
+                        className="p-2 hover:bg-cyan-400/20 hover:text-cyan-400 hover:scale-110 transition-all"
+                        onClick={() => handleProjectAction(project.github)}
                       >
                         <Github className="w-4 h-4" />
                       </Button>
-                      <Button 
-                        size="sm" 
+                      <Button
+                        size="sm"
                         variant="ghost"
-                        className="p-2 hover:bg-purple-400/20 hover:text-purple-400"
+                        className="p-2 hover:bg-purple-400/20 hover:text-purple-400 hover:scale-110 transition-all"
+                        onClick={() => handleProjectAction(project.live)}
                       >
                         <ExternalLink className="w-4 h-4" />
                       </Button>
