@@ -8,6 +8,11 @@ import { ExternalLink, Github, Mail, MapPin, Calendar, GraduationCap, Briefcase,
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('hero');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -212,6 +217,26 @@ export default function Portfolio() {
       credentialId: "Emmy Broomfield"
     }
   ];
+
+  const scrollToSection = (sectionId: string) => {
+    setActiveSection(sectionId);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:usmanfarhan@example.com';
+  };
+
+  const handleGithubClick = () => {
+    window.open('https://github.com/usmanfarhan', '_blank');
+  };
+
+  const handleProjectAction = (url: string) => {
+    window.open(url, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
@@ -621,6 +646,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
-
