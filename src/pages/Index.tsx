@@ -27,8 +27,8 @@ export default function Portfolio() {
       title: "UMT Student Portal",
       description: "Modern redesign of UMT's student portal using HTML, Tailwind CSS, and JavaScript. Includes dark/light mode, responsive sidebar, dynamic sections.",
       tech: ["HTML", "Tailwind CSS", "JavaScript"],
-      github: "https://github.com/usman4116/umt-portal",
-      live: "https://umt-portal.netlify.app"
+      github: "https://github.com/usman4116",
+      live: "https://umtstudentportal.netlify.app/"
     },
     {
       title: "PandasAnalytica CLI",
