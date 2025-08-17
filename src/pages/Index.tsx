@@ -231,7 +231,7 @@ export default function Portfolio() {
   };
 
   const handleGithubClick = () => {
-    window.open('https://github.com/usmanfarhan', '_blank');
+    window.open('https://github.com/usman4116', '_blank');
   };
 
   const handleLinkedinClick = () => {
