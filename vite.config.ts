@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => ({
         manualChunks: undefined, // Single chunk for better standalone compatibility
         entryFileNames: "assets/index.js",
         chunkFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name].[ext]",
+        assetFileNames: "assets/index.[ext]",
         format: "iife", // Use IIFE format instead of ES modules for better compatibility
         name: "UsmanPortfolio"
       },
