@@ -16,4 +16,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: "./", // Use relative paths for standalone HTML
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined, // Single chunk for better standalone compatibility
+      },
+    },
+  },
 }));
