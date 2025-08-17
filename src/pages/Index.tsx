@@ -34,21 +34,21 @@ export default function Portfolio() {
       title: "PandasAnalytica CLI",
       description: "A Python-based CLI tool for Exploratory Data Analysis (EDA) supporting CSV, Excel, and JSON formats.",
       tech: ["Python", "Pandas", "CLI"],
-      github: "https://github.com/usman4116/pandas-analytica",
+      github: "https://github.com/usman4116",
       live: "https://pypi.org/project/pandas-analytica/"
     },
     {
       title: "Personal Finance Manager",
       description: "Semester project in C++ with OOP & File Handling for personal finance tracking and expense management.",
       tech: ["C++", "OOP", "File Handling"],
-      github: "https://github.com/usman4116/finance-manager",
+      github: "https://github.com/usman4116",
       live: "https://github.com/usman4116/finance-manager/releases"
     },
     {
       title: "Car Rental System",
       description: "Collaborative project in C++ demonstrating OOP, team leadership, and efficient booking system design.",
       tech: ["C++", "OOP", "System Design"],
-      github: "https://github.com/usman4116/car-rental-system",
+      github: "https://github.com/usman4116",
       live: "https://github.com/usman4116/car-rental-system/releases"
     }
   ];
