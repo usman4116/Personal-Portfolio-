@@ -23,12 +23,15 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: undefined, // Single chunk for better standalone compatibility
-        entryFileNames: "assets/[name].js",
+        entryFileNames: "assets/index.js",
         chunkFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name].[ext]"
+        assetFileNames: "assets/index.[ext]",
+        format: "iife", // Use IIFE format for better browser compatibility
+        name: "UsmanPortfolio"
       },
     },
     minify: true,
-    sourcemap: false
+    sourcemap: false,
+    target: "es2015" // Better browser compatibility
   },
 }));
