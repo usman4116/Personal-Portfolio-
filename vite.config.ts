@@ -18,10 +18,17 @@ export default defineConfig(({ mode }) => ({
   },
   base: "./", // Use relative paths for standalone HTML
   build: {
+    outDir: "dist",
+    assetsDir: "assets",
     rollupOptions: {
       output: {
         manualChunks: undefined, // Single chunk for better standalone compatibility
+        entryFileNames: "assets/[name].js",
+        chunkFileNames: "assets/[name].js",
+        assetFileNames: "assets/[name].[ext]"
       },
     },
+    minify: true,
+    sourcemap: false
   },
 }));
